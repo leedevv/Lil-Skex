@@ -105,6 +105,8 @@ header{
     border-radius: 10px;
     overflow: hidden;
     transition:  height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	z-index: 1000;
+	margin-bottom: 20px;
 }
 .dropdown_menu.open{
     height: 340px;
@@ -335,6 +337,9 @@ form input{
     border-radius: 12px;
     background: #cdd4e0;
     transition: 0.5s;
+	position: relative;
+	z-index: 1;
+	margin-bottom: 20px;
    
 }
 form input:focus{
