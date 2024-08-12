@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="Images/iconn.png">
+    <title>Lil Skex</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body align="center">
+    
+      
+    <header>
+        <div class="navbar">
+          <div class="logo"><a href="Index.html">Space Bound Rec.</a></div>
+              <ul class="links">
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="Projects.html">Projects</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Contact Us.html">Contact Us</a></li>
+            <li><a href="Note from Lil Skex.html">Note From Lil Skex</a></li>
+            </ul>
+            <a href="Getinvolved.html" class="action_btn">Get Involved</a>
+            <div class="toggle_btn">
+            <i class="fa-solid fa-bars fa-xs" style="color: #ffffff;"></i>
+            </div>
+        </div>
+        <div class="dropdown_menu">
+          <li><a href="Index.html">Home</a></li>
+          <li><a href="Music.html">Music</a></li>
+          <li><a href="Projects.html">Projects</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Contact Us.html">Contact Us</a></li>
+          <li><a href="Note from Lil Skex.html">Note From Lil Skex</a></li>
+          <li><a href="Getinvolved.html" class="action_btn">Get Involved</a></li>
+        </div>
+      </header>       
+      
+      <script>
+        const toggleBtn= document.querySelector('.toggle_btn')
+        const toggleBtnIcon= document.querySelector('.toggle_btn i')
+        const dropDownMenu= document.querySelector('.dropdown_menu')
+      
+        toggleBtn.onclick = function (){
+          dropDownMenu.classList.toggle('open')
+          const isOpen = dropDownMenu.classList.contains('open')
+      
+          toggleBtnIcon.classList = isOpen
+          ? 'fa-solid fa-xmark'
+          : 'fa-solid fa-bars'
+        }
+      </script>
+      
+   <!---music section--->
+  <section id="music">
+    <div class="music container">
+        <div class="music-top">
+            
+            <p>Skex has released a plethora of great music over the years. He has produced great hits like Follow Me, which was released in early 2023.
+            You can stream his music on Apple Music, Spotify, SoundCloud and watch on YouTube. Click the icons for more.</p>
+        </div>
+        <a href="https://spotify.link/6b7sTkU68Cb" type="button" class="cta">Spotify</a>
+        <a href="https://tidal.com/browse/artist/22371423" type="button" class="cta">Tidal</a>
+        <a  href="https://music.apple.com/us/artist/lil-skex/1542205552" type="button" class="cta">Apple Music</a>
+        <a href="https://m.soundcloud.com/olamide-arowosegbe" type="button" class="cta">SoundCloud</a>
+        <a href="https://youtube.com/@lil.skexxx?si=8mYroCKp1T3rAgMA" type="button" class="cta">YouTube</a>
+        <a href="https://instagram.com/lil.skex?igshid=MWZjMTM2ODFkZg==" type="button" class="cta">Instgram</a>
+        <a href="https://www.tiktok.com/@lil.skex" type="button" class="cta">Tiktok</a>
+        <a href="https://twitter.com/lil_skex" type="button" class="cta">X</a>
+        
+      
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> 
+    </div>    
+  </section>
+<!---End music Section--->
+</body>
+<footer>
+  Copyright &copy; <script>document.write(new Date().getFullYear())</script> Lesedi.dev
+</footer>
+</html>

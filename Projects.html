@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="Images/iconn.png">
+    <title>Lil Skex</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body align="center"> 
+    <header>
+        <div class="navbar">
+          <div class="logo"><a href="Index.html">Space Bound Rec.</a></div>
+              <ul class="links">
+             <li><a href="Index.html">Home</a></li>
+            <li><a href="Music.html">Music</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Contact Us.html">Contact US</a></li>
+            <li><a href="Note from Lil Skex.html">Note From Lil Skex</a></li>
+            </ul>
+            <a href="Getinvolved.html" class="action_btn">Get Involved</a>
+            <div class="toggle_btn">
+            <i class="fa-solid fa-bars fa-xs" style="color: #ffffff;"></i>
+            </div>
+        </div>
+        <div class="dropdown_menu">
+          <li><a href="Index.html">Home</a></li>
+          <li><a href="Music.html">Music</a></li>
+          <li><a href="Projects.html">Projects</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Contact Us.html">Contact Us</a></li>
+          <li><a href="Note from Lil Skex.html">Note From Lil Skex</a></li>
+          <li><a href="Getinvolved.html" class="action_btn">Get Involved</a></li>
+        </div>
+      </header>       
+      
+      <script>
+        const toggleBtn= document.querySelector('.toggle_btn')
+        const toggleBtnIcon= document.querySelector('.toggle_btn i')
+        const dropDownMenu= document.querySelector('.dropdown_menu')
+      
+        toggleBtn.onclick = function (){
+          dropDownMenu.classList.toggle('open')
+          const isOpen = dropDownMenu.classList.contains('open')
+      
+          toggleBtnIcon.classList = isOpen
+          ? 'fa-solid fa-xmark'
+          : 'fa-solid fa-bars'
+        }
+      </script>
+    
+ <section class="proj">
+  <div class="nepe">
+    <div class="nepe-image n1"></div>
+    <h2>Follow Me</h2>
+    <p>Follow Me was released in early 2023(on the second of January) and features YBW.This song is about him being very certain on who he is and what he is about as an artist. It is one of his mosted listened to songs on Spotify and Apple Music.</p>
+  </div>
+  <div class="nepe">
+    <div class="nepe-image n2"></div>
+    <h2>Negus/Done</h2>
+    <p>Released on the 23rd of December 2023, NEGUS/DONE was inspired by the people Lil Skex knew and was surrouded by during his upbringing. He highlights the flaws "in the system" and how different people find themselves as slaves to it.</p>
+  </div>
+  <div class="nepe">
+    <div class="nepe-image n3"></div>
+    <h2>Highway</h2>
+    <p>Highway is one of Lil Skex's most popular songs of 2021. It was released on the 7th of September 2021 featuring OGY KING. He was inspired by Andre 3000's flow and created the song off having fun.</p>
+  </div>
+  <div class="nepe">
+    <div class="nepe-image n4"></div>
+    <h2>Leaving the love island</h2>
+    <p>Like Highway, this song was one of Lil Skex's most listened to projects on 2021. It was released on the 29th of May 2021 and features KXDZAII. He channeled the emotions that he felt after coming of out certain sitautions that had affected him. Leaving The Love Island was an expression of all that he felt.</p>
+  </div>
+
+ </section>
+</body>
+<footer>
+  Copyright &copy; <script>document.write(new Date().getFullYear())</script> Lesedi.dev
+</footer>
+</html>

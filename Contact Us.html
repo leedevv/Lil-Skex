@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="Images/iconn.png">
+    <title>Lil Skex</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body align="center">
+    <header>
+        <div class="navbar">
+          <div class="logo"><a href="Index.html">Space Bound Rec.</a></div>
+              <ul class="links">
+                <li><a href="Index.html">Home</a></li>
+            <li><a href="Music.html">Music</a></li>
+            <li><a href="Projects.html">Projects</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Note from Lil Skex.html">Note From Lil Skex</a></li>
+            </ul>
+            <a href="Getinvolved.html" class="action_btn">Get Involved</a>
+            <div class="toggle_btn">
+            <i class="fa-solid fa-bars fa-xs" style="color: #ffffff;"></i>
+            </div>
+        </div>
+        <div class="dropdown_menu">
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="Music.html">Music</a></li>
+            <li><a href="Projects.html">Projects</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Contact Us.html">Contact Us</a></li>
+            <li><a href="Note from Lil Skex.html">Note From Lil Skex</a></li>
+            <li><a href="Getinvolved.html" class="action_btn">Get Involved</a></li>
+        </div>
+      </header>       
+      
+      <script>
+        const toggleBtn= document.querySelector('.toggle_btn')
+        const toggleBtnIcon= document.querySelector('.toggle_btn i')
+        const dropDownMenu= document.querySelector('.dropdown_menu')
+      
+        toggleBtn.onclick = function (){
+          dropDownMenu.classList.toggle('open')
+          const isOpen = dropDownMenu.classList.contains('open')
+      
+          toggleBtnIcon.classList = isOpen
+          ? 'fa-solid fa-xmark'
+          : 'fa-solid fa-bars'
+        }
+      </script>
+      
+<!---Contact Section--->
+<section id="contact">
+    <div class="contact container">
+       
+        <div class="contact-items">
+            <div class="contact-item">
+                <div class="icon"><ion-icon name="call-sharp"></ion-icon></div>
+                <div class="contact-info">
+                    <h1>Phone</h1>
+                    <h2>+27 63 476 6841</h2>
+                </div>
+            </div>
+            <div class="contact-item">
+                <div class="icon"><ion-icon name="mail-sharp"></ion-icon></div>
+                <div class="contact-info">
+                    <h1>Email</h1>
+                    <h2>lilskex777@gmail.com</h2>
+                    <br>
+                    <br>
+                      
+                        
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> 
+</section>
+<!---End Contact Section--->
+</body>
+<footer>
+    Copyright &copy; <script>document.write(new Date().getFullYear())</script> Lesedi.dev
+  </footer>
+</html>

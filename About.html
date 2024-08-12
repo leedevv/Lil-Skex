@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="Images/iconn.png">
+    <title>Lil Skex</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body align="center">
+  <header>
+    <div class="navbar">
+      <div class="logo"><a href="Index.html">Space Bound Rec.</a></div>
+          <ul class="links">
+          <li><a href="Index.html">Home</a></li>
+        <li><a href="Music.html">Music</a></li>
+        <li><a href="Projects.html">Projects</a></li>
+        <li><a href="Contact Us.html">Contact Us</a></li>
+        <li><a href="Note from Lil Skex.html">Note From Lil Skex</a></li>
+        </ul>
+        <a href="Getinvolved.html" class="action_btn">Get Involved</a>
+        <div class="toggle_btn">
+        <i class="fa-solid fa-bars fa-xs" style="color: #ffffff;"></i>
+        </div>
+    </div>
+    <div class="dropdown_menu">
+      <li><a href="Index.html">Home</a></li>
+      <li><a href="Music.html">Music</a></li>
+      <li><a href="Projects.html">Projects</a></li>
+      <li><a href="About.html">About</a></li>
+      <li><a href="Contact Us.html">Contact Us</a></li>
+      <li><a href="Note from Lil Skex.html">Note From Lil Skex</a></li>
+      <li><a href="Getinvolved.html" class="action_btn">Get Involved</a></li>
+    </div>
+  </header>       
+  
+  <script>
+    const toggleBtn= document.querySelector('.toggle_btn')
+    const toggleBtnIcon= document.querySelector('.toggle_btn i')
+    const dropDownMenu= document.querySelector('.dropdown_menu')
+  
+    toggleBtn.onclick = function (){
+      dropDownMenu.classList.toggle('open')
+      const isOpen = dropDownMenu.classList.contains('open')
+  
+      toggleBtnIcon.classList = isOpen
+      ? 'fa-solid fa-xmark'
+      : 'fa-solid fa-bars'
+    }
+  </script>
+  <section id="about">
+    <div class="about container">
+        <div class="col-left">
+          
+        </div>
+        <div class="col-right">
+            
+            <h2>Lil Skex, an artist.</h2>
+            <p>Olamide Mihlali Blessing Arowosegbe known as Lil Skex is a talented artist hailing from Johannesburg, South Africa. Born at Parklane clinic on September 3rd, 2004, Skex is the first child to be born at the clinic on a Friday. Raised by a South African Xhosa mother and a Nigerian Yoruba father, Skex has experienced a diverse upbringing, moving around frequently and living in both dangerous and safe neighborhoods. Despite this, Skex has managed to find inspiration in the criminal activities he has witnessed, primarily in the neighborhood of Rosetenville.
+
+                Skex's love for music began in 2009 after the death of Michael Jackson, who he idolized for many years. LIl Skex had five different DVDs of Jackson, and was also inspired by the artists his father would play, such as Tupac, Biggie, Dr. Dre and Snoop Dogg. Skex's grandmother also played a significant role in shaping his musical taste, introducing him to artists such as Prince, Lionel Richie, and Lauryn Hill.
+                
+                Lil Skex's biggest inspiration is life itself, and he aims to share his thoughts and emotions through his music to help others get through their days. He is also deeply inspired by his late grandmother, who continues to be a source of inspiration for him.</p>
+        </div>
+    </div>
+</section>
+<!---End About Section--->
+ 
+</body>
+<footer>
+  Copyright &copy; <script>document.write(new Date().getFullYear())</script> Lesedi.dev
+</footer>
+</html>

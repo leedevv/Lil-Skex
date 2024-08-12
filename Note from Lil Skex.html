@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="Images/iconn.png">
+    <title>Lil Skex</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body align="center">
+  <header>
+    <div class="navbar">
+      <div class="logo"><a href="Index.html">Space Bound Rec.</a></div>
+          <ul class="links">
+          <li><a href="Index.html">Home</a></li>
+        <li><a href="Music.html">Music</a></li>
+        <li><a href="Projects.html">Projects</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Contact Us.html">Contact Us</a></li>
+        </ul>
+        <a href="Getinvolved.html" class="action_btn">Get Involved</a>
+        <div class="toggle_btn">
+        <i class="fa-solid fa-bars fa-xs" style="color: #ffffff;"></i>
+        </div>
+    </div>
+    <div class="dropdown_menu">
+      <li><a href="Index.html">Home</a></li>
+      <li><a href="Music.html">Music</a></li>
+      <li><a href="Projects.html">Projects</a></li>
+      <li><a href="About.html">About</a></li>
+      <li><a href="Contact Us.html">Contact Us</a></li>
+      <li><a href="Note from Lil Skex.html">Note From Lil Skex</a></li>
+      <li><a href="Getinvolved.html" class="action_btn">Get Involved</a></li>
+    </div>
+  </header>       
+  
+  <script>
+    const toggleBtn= document.querySelector('.toggle_btn')
+    const toggleBtnIcon= document.querySelector('.toggle_btn i')
+    const dropDownMenu= document.querySelector('.dropdown_menu')
+  
+    toggleBtn.onclick = function (){
+      dropDownMenu.classList.toggle('open')
+      const isOpen = dropDownMenu.classList.contains('open')
+  
+      toggleBtnIcon.classList = isOpen
+      ? 'fa-solid fa-xmark'
+      : 'fa-solid fa-bars'
+    }
+  </script>
+  <section id="about">
+    <div class="about container">
+        <div class="col-left">
+          
+        </div>
+        <div class="col-right">
+            
+            <h2>From Skex,</h2>
+           <p>
+            <b>Re-Releases Transformative Mixtape on Bandcamp: A Journey Through Growth and Artistry</b><br>
+            In the journey of an artist, there are moments of profound evolution and self-discovery. For me, this journey has been marked by the creation of my mixtape in 2021, "<i>A Young Man's Theory</i>." This project, originally released across various streaming platforms, has now been carefully removed and relocated to Bandcamp, where it is available for R130 (approximately $7 USD), with individual tracks priced at R93 (approximately $5 USD) each.<br>
+            <br>
+            <b>Embracing the Art of Storytelling</b><br>
+            "<i> Young Man's Theory</i>" is a heartfelt compilation of stories that narrate the significant events and challenges I have faced. Each track carries the weight of personal experiences, trials, and triumphs. While my skills in flow and rapping were still in their infancy during its creation, the authenticity and raw emotion embedded in this mixtape remain undeniable.<br>
+            <br>
+            <b>A Return to the Roots</b><br>
+            In reflecting on my artistic journey, I've come to appreciate the foundational value of "<i>A Young Man's Theory</i>." Although I have grown and improved as an artist, the mixtape represents a pivotal chapter of my life -a time capsule of my struggles, growth, and aspirations. For this reason, I have chosen to make this project accessible on Bandcamp, a platform that allows for a more intimate connection with my audience.<br>
+            <br>
+            <b>A Special Offering:</b><br>
+            The decision to price the mixtape at R130 (around $7 USD) and individual songs at R93 (around $5 USD) on Bandcamp is a testament to the project's worth and my belief in its significance. It is an invitation for listeners to delve deeper into my world, to understand the roots of my artistry, and to support the craft in a meaningful way.<br>
+            <br>
+            <b>A Personal Note:</b><br>
+            My aim is not just to share music but to share a piece of my soul, my journey. This mixtape is a testament to where I've been and a reflection of where I am headed. By relocating it to Bandcamp, I hope to offer my supporters a more personal and valuable experience, free from the transient nature of mainstream streaming platforms.<br>
+            <br>
+            <b>Conclusion:</b><br>
+            "<i>A Young Man's Theory</i>" is more than just a collection of tracks; it is a narrative of growth, resilience, and passion. I invite you to explore this journey with me on Bandcamp and appreciate the stories and artistry that have shaped who I am today.The mixtape can be accessed via Bandcamp and additional information can be found on my
+            official website at
+            https://lewebbie.github.io/Lil-Skex/
+            Thank you for your continued support and for joining me on this artistic journey.
+           <br> <br>Sincerely,<br>
+           <i> Lil Skex</i>
+            
+           </p>
+        </div>
+    </div>
+</section>
+<!---End About Section--->
+ 
+</body>
+<footer>
+  Copyright &copy; <script>document.write(new Date().getFullYear())</script> Lesedi.dev
+</footer>
+</html>
